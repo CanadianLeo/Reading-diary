@@ -1,5 +1,5 @@
-export type TableProps = {
-    items: Array<any>,
+export type TableProps<T> = {
+    items: Array<T>,
     headers: Array<TableHeader>,
 }
 
@@ -8,4 +8,8 @@ export type TableHeader = {
     title: string,
     isSorted?: boolean,
     width?: number,
+}
+
+export type TableItem = {
+    id: string,
 }
